@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: discovery-server
+
+
+eureka:
+  client:
+    region: ap-southeast-1
+    availability-zones:
+      ap-southeast-1: zone-a
+    service-url:
+      zone-a: http://localhost:8761/eureka/
+  server:
+    metrics:
+      enabled: true
+server:
+  port: 8761
